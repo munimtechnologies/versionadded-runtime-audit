@@ -22,9 +22,14 @@ need network access and `uv`.
 
 ## Status
 
-Pre-registered. Results will be added under `results/` with a hand-checked `FIXLIST.md`.
-Only the "doc error" cases defined in PREREG.md go on that list. A clean result ("the
-notes hold up") will be published the same way.
+- 2026-10-31: pre-registered.
+- 2026-11-01: run 1 graded (GRADING.md, results in `results/`). 574 of 609 testable bare
+  markers (94.3%) match the interpreters. P1 (at least 95%) narrowly **failed**, P2 (more
+  "earlier" than "later" mismatches, 30 to 5) held, and P3 (at least 5 real errors)
+  **failed**: hand review of all 35 mismatches found one real error. `calendar.MONDAY` to
+  `SUNDAY` are marked "Added in version 3.12" but were already public and documented in 3.11
+  (FIXLIST.md). Most mismatches are security fixes shipped in older micro releases. uv had no
+  3.7 build, so 3.8 and older markers are untested.
 
 ## Licence
 
